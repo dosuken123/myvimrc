@@ -26,7 +26,7 @@ NeoBundle 'thinca/vim-ref'
 NeoBundle 'yuku-t/vim-ref-ri'
 
 " メソッド定義元へのジャンプ
-NeoBundle 'szw/vim-tags'
+"NeoBundle 'szw/vim-tags'
 
 " 自動で閉じる
 NeoBundle 'tpope/vim-endwise'

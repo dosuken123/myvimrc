@@ -9,7 +9,9 @@ For install or update vimrc
 $ cd /usr/local/src/  
 $ git clone https://github.com/dosuken123/myvimrc.git  
 $ cp ~/.vimrc ~/.vimrc.yyyyMMdd  
+$ cp ~/.vim/indent/ruby.vim ~/.vim/indent/ruby.vim.yyyyMMdd    
 $ ln -s myvimrc/_vimrc ~/.vimrc  
+$ ln -s myvimrc/ruby.vim ~/.vim/indent/ruby.vim  
   
 ------------------------------------------------------------------------  
 Reference  

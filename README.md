@@ -7,7 +7,7 @@ Steps For CentOS
   
 For install or update vimrc  
 $ cd /usr/local/src/  
-$ git clone https://github.com/<your account>/dotfiles.git   
+$ git clone https://github.com/dosuken123/myvimrc.git  
 $ cp ~/.vimrc ~/.vimrc.yyyyMMdd  
 $ ln -s myvimrc/_vimrc ~/.vimrc  
   

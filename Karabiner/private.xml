@@ -5,7 +5,7 @@
 		<identifier>remap.custom_vi_mode</identifier>
 		<autogen>
 			__KeyOverlaidModifier__
-			KeyCode::JIS_EISUU, ModifierFlag::NONE,
+			KeyCode::JIS_EISUU, 
 			@begin
 			KeyCode::VK_CONFIG_SYNC_KEYDOWNUP_notsave_custom_vi_mode,
 			@end
@@ -14,27 +14,53 @@
 			@end
 		</autogen>
 	</item>
-	<autogen>
-		__KeyOverlaidModifier__
-		KeyCode::A, ModifierFlag::NONE,
-		@begin
-		KeyCode::VK_CONFIG_SYNC_KEYDOWNUP_notsave_custom_vi_mode,
-		@end
-		@begin
-		KeyCode::A
-		@end
-	</autogen>
 	<item hidden="true">
 		<identifier vk_config="true">notsave_custom_vi_mode</identifier>
-		<autogen>
-			__BlockUntilKeyUp__ KeyCode::S
-		</autogen>
 		<autogen>__KeyToKey__ KeyCode::H, KeyCode::CURSOR_LEFT</autogen>
 		<autogen>__KeyToKey__ KeyCode::J, KeyCode::CURSOR_DOWN</autogen>
 		<autogen>__KeyToKey__ KeyCode::K, KeyCode::CURSOR_UP</autogen>
 		<autogen>__KeyToKey__ KeyCode::L, KeyCode::CURSOR_RIGHT</autogen>
 		<autogen>__KeyToKey__ KeyCode::I, KeyCode::RETURN</autogen>
 		<autogen>__KeyToKey__ KeyCode::U, KeyCode::DELETE</autogen>
-		<autogen>__KeyToKey__ KeyCode::F, KeyCode::FN</autogen>
+
+		<autogen>__KeyToKey__ KeyCode::FN, KeyCode::0</autogen>
+		<autogen>__KeyToKey__ KeyCode::SLASH, KeyCode::1</autogen>
+		<autogen>__KeyToKey__ KeyCode::JIS_UNDERSCORE, KeyCode::2</autogen>
+		<autogen>__KeyToKey__ KeyCode::SHIFT_R, KeyCode::3</autogen>
+		<autogen>__KeyToKey__ KeyCode::SEMICOLON, KeyCode::4</autogen>
+		<autogen>__KeyToKey__ KeyCode::QUOTE, KeyCode::5</autogen>
+		<autogen>__KeyToKey__ KeyCode::BACKSLASH, KeyCode::6</autogen>
+		<autogen>__KeyToKey__ KeyCode::P, KeyCode::7</autogen>
+		<autogen>__KeyToKey__ KeyCode::BRACKET_LEFT, KeyCode::8</autogen>
+		<autogen>__KeyToKey__ KeyCode::BRACKET_RIGHT, KeyCode::9</autogen>
+
+		<autogen>__KeyToKey__ KeyCode::N, ModifierFlag::NONE, KeyCode::8, ModifierFlag::SHIFT_L</autogen>
+		<autogen>__KeyToKey__ KeyCode::N, ModifierFlag::SHIFT_L, KeyCode::9, ModifierFlag::SHIFT_L</autogen>
+    <autogen>__KeyToKey__ KeyCode::M, ModifierFlag::NONE, KeyCode::BRACKET_RIGHT</autogen>
+    <autogen>__KeyToKey__ KeyCode::M, ModifierFlag::SHIFT_L, KeyCode::BACKSLASH</autogen>
+    <autogen>__KeyToKey__ KeyCode::COMMA, ModifierFlag::NONE,  KeyCode::BRACKET_RIGHT, ModifierFlag::SHIFT_L</autogen>
+    <autogen>__KeyToKey__ KeyCode::COMMA, ModifierFlag::SHIFT_L, KeyCode::BACKSLASH, ModifierFlag::SHIFT_L</autogen>
+    <autogen>__KeyToKey__ KeyCode::DOT, ModifierFlag::NONE, KeyCode::2, ModifierFlag::SHIFT_L</autogen>
+    <autogen>__KeyToKey__ KeyCode::DOT, ModifierFlag::SHIFT_L, KeyCode::7, ModifierFlag::SHIFT_L</autogen>
+
+		<autogen>__KeyToKey__ KeyCode::A, ModifierFlag::NONE, KeyCode::EQUAL</autogen>
+		<autogen>__KeyToKey__ KeyCode::A, ModifierFlag::SHIFT_L, KeyCode::EQUAL, ModifierFlag::SHIFT_L</autogen>
+		<autogen>__KeyToKey__ KeyCode::S, ModifierFlag::NONE, KeyCode::4, ModifierFlag::SHIFT_L</autogen>
+		<autogen>__KeyToKey__ KeyCode::S, ModifierFlag::SHIFT_L, KeyCode::6, ModifierFlag::SHIFT_L</autogen>
+		<autogen>__KeyToKey__ KeyCode::D, ModifierFlag::NONE, KeyCode::MINUS</autogen>
+		<autogen>__KeyToKey__ KeyCode::D, ModifierFlag::SHIFT_L, KeyCode::JIS_UNDERSCORE</autogen>
+		<autogen>__KeyToKey__ KeyCode::F, ModifierFlag::NONE, KeyCode::SLASH</autogen>
+		<autogen>__KeyToKey__ KeyCode::F, ModifierFlag::SHIFT_L, KeyCode::JIS_YEN</autogen>
+
+		<autogen>__KeyToKey__ KeyCode::Q, KeyCode::CAPSLOCK</autogen>
+		<autogen>__KeyToKey__ KeyCode::W, KeyCode::QUOTE</autogen>
+    <!-- <autogen>__KeyToKey__ KeyCode::E, KeyCode::MINUS</autogen> -->
+		<!-- <autogen>__KeyToKey__ KeyCode::R, KeyCode::JIS_UNDERSCORE</autogen>n> -->
+
+    <!-- <autogen>__KeyToKey__ KeyCode::Z, KeyCode::SLASH</autogen> -->
+		<!-- <autogen>__KeyToKey__ KeyCode::X, KeyCode::JIS_YEN, ModifierFlag::SHIFT_L</autogen> -->
+		<!-- <autogen>__KeyToKey__ KeyCode::C, KeyCode::SLASH</autogen> -->
+		<!-- <autogen>__KeyToKey__ KeyCode::V, KeyCode::JIS_YEN, ModifierFlag::SHIFT_L</autogen> -->
+
 	</item>
 </root>

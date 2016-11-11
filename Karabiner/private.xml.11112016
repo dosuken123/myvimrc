@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<root>
+	<item>
+		<name>Custom Vi mode</name>
+		<identifier>remap.custom_vi_mode</identifier>
+		<autogen>
+			__KeyOverlaidModifier__
+			KeyCode::JIS_EISUU, ModifierFlag::NONE,
+			@begin
+			KeyCode::VK_CONFIG_SYNC_KEYDOWNUP_notsave_custom_vi_mode,
+			@end
+			@begin
+			KeyCode::JIS_EISUU
+			@end
+		</autogen>
+	</item>
+	<autogen>
+		__KeyOverlaidModifier__
+		KeyCode::A, ModifierFlag::NONE,
+		@begin
+		KeyCode::VK_CONFIG_SYNC_KEYDOWNUP_notsave_custom_vi_mode,
+		@end
+		@begin
+		KeyCode::A
+		@end
+	</autogen>
+	<item hidden="true">
+		<identifier vk_config="true">notsave_custom_vi_mode</identifier>
+		<autogen>
+			__BlockUntilKeyUp__ KeyCode::S
+		</autogen>
+		<autogen>__KeyToKey__ KeyCode::H, KeyCode::CURSOR_LEFT</autogen>
+		<autogen>__KeyToKey__ KeyCode::J, KeyCode::CURSOR_DOWN</autogen>
+		<autogen>__KeyToKey__ KeyCode::K, KeyCode::CURSOR_UP</autogen>
+		<autogen>__KeyToKey__ KeyCode::L, KeyCode::CURSOR_RIGHT</autogen>
+		<autogen>__KeyToKey__ KeyCode::I, KeyCode::RETURN</autogen>
+		<autogen>__KeyToKey__ KeyCode::U, KeyCode::DELETE</autogen>
+		<autogen>__KeyToKey__ KeyCode::F, KeyCode::FN</autogen>
+	</item>
+</root>

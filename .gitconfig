@@ -1,0 +1,34 @@
+# This is Git's per-user configuration file.
+[user]
+# Please adapt and uncomment the following lines:
+#	name = ShinyaMaeda
+#	email = shinyamaeda@ShinyaMaedas-MacBook-Pro.local
+[user]
+	name = Shinya Maeda
+	email = shinya@gitlab.com
+[alias]
+	co = checkout
+	br = branch
+	ci = commit
+	st = status
+	pho = push origin
+	plo = pull origin
+	plu = pull upstream
+	feo = fetch origin
+	feu = fetch upstream
+	logs = log --stat
+	logg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+	logo = log --pretty=oneline
+	di = diff
+	din = diff --name-only
+	re = remote
+	fe = fetch
+	reb = rebase
+	merge-commit = "!f() { git rev-list $1..HEAD --ancestry-path --merges | tail -n 1 | xargs git show; }; f"
+[http]
+	postBuffer = 1048576000
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
